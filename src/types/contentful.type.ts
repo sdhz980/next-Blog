@@ -76,6 +76,7 @@ interface Asset {
       locale: string;
     };
     fields: {
+      short: string;
       title: string;
       slug: string;
       category: string;
@@ -124,6 +125,7 @@ interface Asset {
 
   export interface ContentfulResponseSingleEntry {
     fields: {
+      short: string;
       title: string;
       slug: string;
       category: string;
@@ -149,8 +151,8 @@ interface Asset {
             value: any;
             nodeType: string;
           }[];
-          marks: Record<string, unknown>[];
-          data: Record<string, unknown>;
+          marks: any[];
+          data: any;
         }[];
       };
       createdAt: string;
